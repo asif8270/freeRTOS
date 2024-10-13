@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/freeRTOS/hello_world/build/CMakeFiles/bootloader
+D:/freeRTOS/hello_world/build/CMakeFiles/bootloader.rule
+D:/freeRTOS/hello_world/build/CMakeFiles/bootloader-complete.rule
+D:/freeRTOS/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/freeRTOS/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/freeRTOS/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/freeRTOS/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/freeRTOS/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/freeRTOS/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/freeRTOS/hello_world/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

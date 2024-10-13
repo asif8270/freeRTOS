@@ -1,0 +1,343 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7124
+load:0x40078000,len:15624
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 13 2024 09:34:30[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09148h ( 37192) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00019170 vaddr=3ffb0000 size=02108h (  8456) load[0m
+[0;32mI (120) esp_image: segment 2: paddr=0001b280 vaddr=40080000 size=04d98h ( 19864) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=137e4h ( 79844) map[0m
+[0;32mI (160) esp_image: segment 4: paddr=0003380c vaddr=40084d98 size=07308h ( 29448) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (190) cpu_start: Multicore app[0m
+[0;32mI (190) cpu_start: Pro cpu up.[0m
+[0;32mI (191) cpu_start: Starting app cpu, entry point is 0x400810f4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (208) cpu_start: Pro cpu start user code[0m
+[0;32mI (208) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (208) cpu_start: Application information:[0m
+[0;32mI (213) cpu_start: Project name:     hello_world[0m
+[0;32mI (218) cpu_start: App version:      4a6df4b[0m
+[0;32mI (223) cpu_start: Compile time:     Oct 13 2024 09:33:44[0m
+[0;32mI (230) cpu_start: ELF file SHA256:  d9da893fd569fecd...[0m
+[0;32mI (235) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (241) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (246) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (251) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (256) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (263) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFB2980 len 0002D680 (181 KiB): DRAM[0m
+[0;32mI (275) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (281) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 4008C0A0 len 00013F60 (79 KiB): IRAM[0m
+[0;32mI (296) spi_flash: detected chip: generic[0m
+[0;32mI (299) spi_flash: flash io: dio[0m
+[0;33mW (303) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (316) app_start: Starting scheduler on CPU0[0m
+[0;32mI (321) app_start: Starting scheduler on CPU1[0m
+[0;32mI (321) main_task: Started on CPU0[0m
+[0;32mI (331) main_task: Calling app_main()[0m
+0: Hello world!
+1: Hello world!
+2: Hello world!
+3: Hello world!
+4: Hello world!
+5: Hello world!
+6: Hello world!
+7: Hello world!
+8: Hello world!
+9: Hello world!
+10: Hello world!
+11: Hello world!
+12: Hello world!
+13: Hello world!
+14: Hello world!
+15: Hello world!
+16: Hello world!
+17: Hello world!
+18: Hello world!
+19: Hello world!
+20: Hello world!
+21: Hello world!
+22: Hello world!
+23: Hello world!
+24: Hello world!
+25: Hello world!
+26: Hello world!
+27: Hello world!
+28: Hello world!
+29: Hello world!
+30: Hello world!
+31: Hello world!
+32: Hello world!
+33: Hello world!
+34: Hello world!
+35: Hello world!
+36: Hello world!
+37: Hello world!
+38: Hello world!
+39: Hello world!
+40: Hello world!
+41: Hello world!
+42: Hello world!
+43: Hello world!
+44: Hello world!
+45: Hello world!
+46: Hello world!
+47: Hello world!
+48: Hello world!
+49: Hello world!
+50: Hello world!
+51: Hello world!
+52: Hello world!
+53: Hello world!
+54: Hello world!
+55: Hello world!
+56: Hello world!
+57: Hello world!
+58: Hello world!
+59: Hello world!
+60: Hello world!
+61: Hello world!
+62: Hello world!
+63: Hello world!
+64: Hello world!
+65: Hello world!
+66: Hello world!
+67: Hello world!
+68: Hello world!
+69: Hello world!
+70: Hello world!
+71: Hello world!
+72: Hello world!
+73: Hello world!
+74: Hello world!
+75: Hello world!
+76: Hello world!
+77: Hello world!
+78: Hello world!
+79: Hello world!
+80: Hello world!
+81: Hello world!
+82: Hello world!
+83: Hello world!
+84: Hello world!
+85: Hello world!
+86: Hello world!
+87: Hello world!
+88: Hello world!
+89: Hello world!
+90: Hello world!
+91: Hello world!
+92: Hello world!
+93: Hello world!
+94: Hello world!
+95: Hello world!
+96: Hello world!
+97: Hello world!
+98: Hello world!
+99: Hello world!
+100: Hello world!
+101: Hello world!
+102: Hello world!
+103: Hello world!
+104: Hello world!
+105: Hello world!
+106: Hello world!
+107: Hello world!
+108: Hello world!
+109: Hello world!
+110: Hello world!
+111: Hello world!
+112: Hello world!
+113: Hello world!
+114: Hello world!
+115: Hello world!
+116: Hello world!
+117: Hello world!
+118: Hello world!
+119: Hello world!
+120: Hello world!
+121: Hello world!
+122: Hello world!
+123: Hello world!
+124: Hello world!
+125: Hello world!
+126: Hello world!
+127: Hello world!
+128: Hello world!
+129: Hello world!
+130: Hello world!
+131: Hello world!
+132: Hello world!
+133: Hello world!
+134: Hello world!
+135: Hello world!
+136: Hello world!
+137: Hello world!
+138: Hello world!
+139: Hello world!
+140: Hello world!
+141: Hello world!
+142: Hello world!
+143: Hello world!
+144: Hello world!
+145: Hello world!
+146: Hello world!
+147: Hello world!
+148: Hello world!
+149: Hello world!
+150: Hello world!
+151: Hello world!
+152: Hello world!
+153: Hello world!
+154: Hello world!
+155: Hello world!
+156: Hello world!
+157: Hello world!
+158: Hello world!
+159: Hello world!
+160: Hello world!
+161: Hello world!
+162: Hello world!
+163: Hello world!
+164: Hello world!
+165: Hello world!
+166: Hello world!
+167: Hello world!
+168: Hello world!
+169: Hello world!
+170: Hello world!
+171: Hello world!
+172: Hello world!
+173: Hello world!
+174: Hello world!
+175: Hello world!
+176: Hello world!
+177: Hello world!
+178: Hello world!
+179: Hello world!
+180: Hello world!
+181: Hello world!
+182: Hello world!
+183: Hello world!
+184: Hello world!
+185: Hello world!
+186: Hello world!
+187: Hello world!
+188: Hello world!
+189: Hello world!
+190: Hello world!
+191: Hello world!
+192: Hello world!
+193: Hello world!
+194: Hello world!
+195: Hello world!
+196: Hello world!
+197: Hello world!
+198: Hello world!
+199: Hello world!
+200: Hello world!
+201: Hello world!
+202: Hello world!
+203: Hello world!
+204: Hello world!
+205: Hello world!
+206: Hello world!
+207: Hello world!
+208: Hello world!
+209: Hello world!
+210: Hello world!
+211: Hello world!
+212: Hello world!
+213: Hello world!
+214: Hello world!
+215: Hello world!
+216: Hello world!
+217: Hello world!
+218: Hello world!
+219: Hello world!
+220: Hello world!
+221: Hello world!
+222: Hello world!
+223: Hello world!
+224: Hello world!
+225: Hello world!
+226: Hello world!
+227: Hello world!
+228: Hello world!
+229: Hello world!
+230: Hello world!
+231: Hello world!
+232: Hello world!
+233: Hello world!
+234: Hello world!
+235: Hello world!
+236: Hello world!
+237: Hello world!
+238: Hello world!
+239: Hello world!
+240: Hello world!
+241: Hello world!
+242: Hello world!
+243: Hello world!
+244: Hello world!
+245: Hello world!
+246: Hello world!
+247: Hello world!
+248: Hello world!
+249: Hello world!
+250: Hello world!
+251: Hello world!
+252: Hello world!
+253: Hello world!
+254: Hello world!
+255: Hello world!
+256: Hello world!
+257: Hello world!
+258: Hello world!
+259: Hello world!
+260: Hello world!
+261: Hello world!
+262: Hello world!
+263: Hello world!
+264: Hello world!
+265: Hello world!
+266: Hello world!
+267: Hello world!
+268: Hello world!
+269: Hello world!
+270: Hello world!
+271: Hello world!
+272: Hello world!
+273: Hello world!
+274: Hello world!
+275: Hello world!
+276: Hello world!
+277: Hello world!
+278: Hello world!
+279: Hello world!
+280: Hello world!
+281: Hello world!
+282: Hello world!
