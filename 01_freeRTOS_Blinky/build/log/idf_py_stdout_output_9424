@@ -1,0 +1,65 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\freeRTOS\01_freeRTOS_Blinky\build\bootloader\esp-idf\esptool_py && d:\espressif\v5.1.4\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/espressif/v5.1.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/freeRTOS/01_freeRTOS_Blinky/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/blinky_main.c.obj
+D:/freeRTOS/01_freeRTOS_Blinky/main/blinky_main.c: In function 'app_main':
+D:/freeRTOS/01_freeRTOS_Blinky/main/blinky_main.c:86:46: warning: passing argument 1 of 'uxTaskPriorityGet' from incompatible pointer type [-Wincompatible-pointer-types]
+   86 |     UBaseType_t priority = uxTaskPriorityGet(blueLEDTask);
+      |                                              ^~~~~~~~~~~
+      |                                              |
+      |                                              void (*)(void *)
+In file included from D:/freeRTOS/01_freeRTOS_Blinky/main/blinky_main.c:6:
+D:/espressif/v5.1.4/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1229:51: note: expected 'TaskHandle_t' {aka 'struct tskTaskControlBlock * const'} but argument is of type 'void (*)(void *)'
+ 1229 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                ~~~~~~~~~~~~~~~~~~~^~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable hello_world.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/freeRTOS/01_freeRTOS_Blinky/build/hello_world.bin
+[7/8] cmd.exe /C "cd /D D:\freeRTOS\01_freeRTOS_Blinky\build\esp-idf\esptool_py && d:\espressif\v5.1.4\.espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/espressif/v5.1.4/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/freeRTOS/01_freeRTOS_Blinky/build/partition_table/partition-table.bin D:/freeRTOS/01_freeRTOS_Blinky/build/hello_world.bin"
+hello_world.bin binary size 0x2b720 bytes. Smallest app partition is 0x100000 bytes. 0xd48e0 bytes (83%) free.
+[7/8] cmd.exe /C "cd /D D:\espressif\v5.1.4\esp-idf\components\esptool_py && D:\espressif\v5.1.4\.espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/espressif/v5.1.4/esp-idf -D SERIAL_TOOL=d:/espressif/v5.1.4/.espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/espressif/v5.1.4/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/freeRTOS/01_freeRTOS_Blinky/build -P D:/espressif/v5.1.4/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 hello_world.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM4
+Connecting....
+Chip is ESP32-D0WDQ6 (revision v1.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 08:3a:f2:7c:bf:c4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0003bfff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16738...
+Writing at 0x00001000... (50 %)
+Writing at 0x000076a1... (100 %)
+Wrote 26720 bytes (16738 compressed) at 0x00001000 in 0.9 seconds (effective 235.5 kbit/s)...
+Hash of data verified.
+Compressed 177952 bytes to 98780...
+Writing at 0x00010000... (14 %)
+Writing at 0x0001c2e8... (28 %)
+Writing at 0x00021c45... (42 %)
+Writing at 0x00027726... (57 %)
+Writing at 0x0002d992... (71 %)
+Writing at 0x000355d3... (85 %)
+Writing at 0x0003b445... (100 %)
+Wrote 177952 bytes (98780 compressed) at 0x00010000 in 2.7 seconds (effective 519.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 318.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
