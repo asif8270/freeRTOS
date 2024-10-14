@@ -1,0 +1,22 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400810f4: call_start_cpu1 at D:/espressif/v5.1.4/esp-idf/components/esp_system/port/cpu_start.c:159
+[0m
+[0;33m0x400d74e7: task_wdt_timeout_handling at D:/espressif/v5.1.4/esp-idf/components/esp_system/task_wdt/task_wdt.c:489 (discriminator 3)
+0x400d78b4: task_wdt_isr at D:/espressif/v5.1.4/esp-idf/components/esp_system/task_wdt/task_wdt.c:565
+0x40082991: _xt_lowint1 at D:/espressif/v5.1.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d59ec: gpio_set_level at D:/espressif/v5.1.4/esp-idf/components/driver/gpio/gpio.c:239 (discriminator 4)
+0x400d5501: genTask at D:/freeRTOS/02_freeRTOS_TaskParameters/main/main.c:46 (discriminator 1)
+0x40087c95: vPortTaskWrapper at D:/espressif/v5.1.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40084362: esp_crosscore_isr at D:/espressif/v5.1.4/esp-idf/components/esp_system/crosscore_int.c:96
+0x40082991: _xt_lowint1 at D:/espressif/v5.1.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1240
+0x400d59ad: gpio_set_level at D:/espressif/v5.1.4/esp-idf/components/driver/gpio/gpio.c:238 (discriminator 2)
+0x400d5501: genTask at D:/freeRTOS/02_freeRTOS_TaskParameters/main/main.c:46 (discriminator 1)
+0x40087c95: vPortTaskWrapper at D:/espressif/v5.1.4/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0m
