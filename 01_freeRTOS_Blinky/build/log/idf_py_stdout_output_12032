@@ -1,0 +1,209 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7124
+load:0x40078000,len:15624
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct 13 2024 10:55:54[0m
+[0;32mI (30) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v1.0[0m
+[0;32mI (38) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (43) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=095e0h ( 38368) map[0m
+[0;32mI (117) esp_image: segment 1: paddr=00019608 vaddr=3ffb0000 size=02150h (  8528) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001b760 vaddr=40080000 size=048b8h ( 18616) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=13ee4h ( 81636) map[0m
+[0;32mI (161) esp_image: segment 4: paddr=00033f0c vaddr=400848b8 size=077e8h ( 30696) load[0m
+[0;32mI (180) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (180) boot: Disabling RNG early entropy source...[0m
+[0;32mI (192) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu up.[0m
+[0;32mI (192) cpu_start: Starting app cpu, entry point is 0x400810f4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (210) cpu_start: Pro cpu start user code[0m
+[0;32mI (210) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (210) cpu_start: Application information:[0m
+[0;32mI (215) cpu_start: Project name:     hello_world[0m
+[0;32mI (220) cpu_start: App version:      c46336e-dirty[0m
+[0;32mI (225) cpu_start: Compile time:     Oct 13 2024 10:56:05[0m
+[0;32mI (232) cpu_start: ELF file SHA256:  573e003425b8b38a...[0m
+[0;32mI (238) cpu_start: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (243) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (248) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (253) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (258) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (265) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFB29C8 len 0002D638 (181 KiB): DRAM[0m
+[0;32mI (277) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (290) heap_init: At 4008C0A0 len 00013F60 (79 KiB): IRAM[0m
+[0;32mI (298) spi_flash: detected chip: generic[0m
+[0;32mI (301) spi_flash: flash io: dio[0m
+[0;33mW (305) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (318) app_start: Starting scheduler on CPU0[0m
+[0;32mI (323) app_start: Starting scheduler on CPU1[0m
+[0;32mI (323) main_task: Started on CPU0[0m
+[0;32mI (333) main_task: Calling app_main()[0m
+0: This Blinky task for BLUE LED
+1: This Blinky task for BLUE LED
+2: This Blinky task for BLUE LED
+3: This Blinky task for BLUE LED
+4: This Blinky task for BLUE LED
+5: This Blinky task for BLUE LED
+6: This Blinky task for BLUE LED
+7: This Blinky task for BLUE LED
+8: This Blinky task for BLUE LED
+9: This Blinky task for BLUE LED
+10: This Blinky task for BLUE LED
+11: This Blinky task for BLUE LED
+12: This Blinky task for BLUE LED
+13: This Blinky task for BLUE LED
+14: This Blinky task for BLUE LED
+15: This Blinky task for BLUE LED
+16: This Blinky task for BLUE LED
+17: This Blinky task for BLUE LED
+18: This Blinky task for BLUE LED
+19: This Blinky task for BLUE LED
+20: This Blinky task for BLUE LED
+21: This Blinky task for BLUE LED
+22: This Blinky task for BLUE LED
+23: This Blinky task for BLUE LED
+24: This Blinky task for BLUE LED
+25: This Blinky task for BLUE LED
+26: This Blinky task for BLUE LED
+27: This Blinky task for BLUE LED
+28: This Blinky task for BLUE LED
+29: This Blinky task for BLUE LED
+30: This Blinky task for BLUE LED
+31: This Blinky task for BLUE LED
+32: This Blinky task for BLUE LED
+33: This Blinky task for BLUE LED
+34: This Blinky task for BLUE LED
+35: This Blinky task for BLUE LED
+36: This Blinky task for BLUE LED
+37: This Blinky task for BLUE LED
+38: This Blinky task for BLUE LED
+39: This Blinky task for BLUE LED
+40: This Blinky task for BLUE LED
+41: This Blinky task for BLUE LED
+42: This Blinky task for BLUE LED
+43: This Blinky task for BLUE LED
+44: This Blinky task for BLUE LED
+45: This Blinky task for BLUE LED
+46: This Blinky task for BLUE LED
+47: This Blinky task for BLUE LED
+48: This Blinky task for BLUE LED
+49: This Blinky task for BLUE LED
+50: This Blinky task for BLUE LED
+51: This Blinky task for BLUE LED
+52: This Blinky task for BLUE LED
+53: This Blinky task for BLUE LED
+54: This Blinky task for BLUE LED
+55: This Blinky task for BLUE LED
+56: This Blinky task for BLUE LED
+57: This Blinky task for BLUE LED
+58: This Blinky task for BLUE LED
+59: This Blinky task for BLUE LED
+60: This Blinky task for BLUE LED
+61: This Blinky task for BLUE LED
+62: This Blinky task for BLUE LED
+63: This Blinky task for BLUE LED
+64: This Blinky task for BLUE LED
+65: This Blinky task for BLUE LED
+66: This Blinky task for BLUE LED
+67: This Blinky task for BLUE LED
+68: This Blinky task for BLUE LED
+69: This Blinky task for BLUE LED
+70: This Blinky task for BLUE LED
+71: This Blinky task for BLUE LED
+72: This Blinky task for BLUE LED
+73: This Blinky task for BLUE LED
+74: This Blinky task for BLUE LED
+75: This Blinky task for BLUE LED
+76: This Blinky task for BLUE LED
+77: This Blinky task for BLUE LED
+78: This Blinky task for BLUE LED
+79: This Blinky task for BLUE LED
+80: This Blinky task for BLUE LED
+81: This Blinky task for BLUE LED
+82: This Blinky task for BLUE LED
+83: This Blinky task for BLUE LED
+84: This Blinky task for BLUE LED
+85: This Blinky task for BLUE LED
+86: This Blinky task for BLUE LED
+87: This Blinky task for BLUE LED
+88: This Blinky task for BLUE LED
+89: This Blinky task for BLUE LED
+90: This Blinky task for BLUE LED
+91: This Blinky task for BLUE LED
+92: This Blinky task for BLUE LED
+93: This Blinky task for BLUE LED
+94: This Blinky task for BLUE LED
+95: This Blinky task for BLUE LED
+96: This Blinky task for BLUE LED
+97: This Blinky task for BLUE LED
+98: This Blinky task for BLUE LED
+99: This Blinky task for BLUE LED
+100: This Blinky task for BLUE LED
+101: This Blinky task for BLUE LED
+102: This Blinky task for BLUE LED
+103: This Blinky task for BLUE LED
+104: This Blinky task for BLUE LED
+105: This Blinky task for BLUE LED
+106: This Blinky task for BLUE LED
+107: This Blinky task for BLUE LED
+108: This Blinky task for BLUE LED
+109: This Blinky task for BLUE LED
+110: This Blinky task for BLUE LED
+111: This Blinky task for BLUE LED
+112: This Blinky task for BLUE LED
+113: This Blinky task for BLUE LED
+114: This Blinky task for BLUE LED
+115: This Blinky task for BLUE LED
+116: This Blinky task for BLUE LED
+117: This Blinky task for BLUE LED
+118: This Blinky task for BLUE LED
+119: This Blinky task for BLUE LED
+120: This Blinky task for BLUE LED
+121: This Blinky task for BLUE LED
+122: This Blinky task for BLUE LED
+123: This Blinky task for BLUE LED
+124: This Blinky task for BLUE LED
+125: This Blinky task for BLUE LED
+126: This Blinky task for BLUE LED
+127: This Blinky task for BLUE LED
+128: This Blinky task for BLUE LED
+129: This Blinky task for BLUE LED
+130: This Blinky task for BLUE LED
+131: This Blinky task for BLUE LED
+132: This Blinky task for BLUE LED
+133: This Blinky task for BLUE LED
+134: This Blinky task for BLUE LED
+135: This Blinky task for BLUE LED
+136: This Blinky task for BLUE LED
+137: This Blinky task for BLUE LED
+138: This Blinky task for BLUE LED
+139: This Blinky task for BLUE LED
+140: This Blinky task for BLUE LED
+141: This Blinky task for BLUE LED
+142: This Blinky task for BLUE LED
+143: This Blinky task for BLUE LED
+144: This Blinky task for BLUE LED
+145: This Blinky task for BLUE LED
+146: This Blinky task for BLUE LED
+147: This Blinky task for BLUE LED
+
